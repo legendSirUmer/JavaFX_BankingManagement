@@ -1,0 +1,72 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+
+.deposit_container {
+-fx-background-color: #EEEEEE;
+}
+.search_box {
+-fx-spacing: 10;
+-fx-border-color: #AAAAAA;
+-fx-border-width: 0 0 1 0;
+}
+Text {
+-fx-font-family: "Calibri Light";
+-fx-font-size: 1.6em;
+-fx-fill: #555555;
+}
+.search_box TextField {
+-fx-pref-width: 200;
+-fx-pref-height: 35;
+-fx-background-color: #FFFFFF;
+-fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+}
+
+
+
+Button {
+-fx-background-color: linear-gradient(to right, #4D2796, #4786E8);
+-fx-effect: dropshadow(three-pass-box, #AAAAAA, 3, 0, 0, 3);
+-fx-font-size: 1.6em;
+-fx-text-fill: #FFFFFF;
+-fx-font-family: "Calibri Light";
+-fx-pref-width: 206;
+}
+Button:hover {
+-fx-cursor: hand;
+}
+.result_box {
+-fx-spacing: 15;
+}
+list-view {
+-fx-background-color: #EEEEEE;
+
+}
+
+list-cell {
+-fx-background-color: #EEEEEE;
+-fx-padding: 20 0 20 0;
+}
+
+
+
+
+.admin_back{
+    -fx-background-image: url("Images/adminback.jpg");
+}
+
+.container_innerback{
+    -fx-background-image: url("Images/back5.jpeg");
+}
+
+.whitetext{
+    -fx-fill: #000000;
+    -fx-font-size: 1.7em;
+    
+    
+}

@@ -1,0 +1,71 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+-fx-background-color: #EEEEEE;
+-fx-border-color: #132A13;
+}
+.login-container{
+    -fx-background-color:  linear-gradient(to left, rgb(39, 43, 44) 0.00%, rgb(241, 60, 43) 100.00%);
+    -fx-background-radius: 5px;
+    -fx-border-color: black;
+    
+}
+.login-container label{
+    -fx-fill: #c3cd85;
+    -fx-text-fill: #c3cd85;
+}
+
+.loginImage{
+    -fx-background-fills: #132A13
+}
+.alabel{
+    -fx-text-fill: #d7b9ba;
+    
+}
+
+button{
+    -fx-background-fills: #132A13
+}
+
+.account_selector{
+    -fx-background-color: ECF39E;
+}
+
+.account_selector .label {
+-fx-text-fill: #132A13;
+-fx-font-size: 1.1em;
+}
+.account_selector .arrow {
+-fx-background-color: #132A13;
+}
+
+#choice-box-popup-menu {
+-fx-background-color: #ECF39E;
+
+}
+.login_form_container{
+    -fx-spacing: 15;
+    -fx-alignment: center;
+}
+
+.login_form_container Label {
+-fx-font-size: 1.1em;
+-fx-font-weight: bold;
+}
+.input_field {
+-fx-background-color: #FFFFFF;
+-fx-pref-height: 35;
+-fx-font-size: 1.2em;
+}
+.login_form_container Button {
+-fx-background-color: linear-gradient(to left, rgb(39, 43, 44) 0.00%, rgb(241, 60, 43) 100.00%);
+-fx-text-fill: #FFFFFF;
+-fx-pref-width: 350;
+-fx-pref-height: 38;
+-fx-font-size: 1.2em;
+}
+.login_form_container Button:hover {
+-fx-cursor: hand;
+}

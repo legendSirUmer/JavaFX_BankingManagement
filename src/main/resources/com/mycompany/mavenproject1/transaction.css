@@ -1,0 +1,40 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.transactions_container {
+-fx-background-color: #EEEEEE;
+}
+.transactions_container Text {
+-fx-fill: #ffffff;
+-fx-font-size: 2.5em;
+-fx-font-family: "Calibri Light";
+}
+.transactions_container .list-view {
+-fx-background-color: #EEEEEE;
+-fx-padding: 10;
+}
+.transactions_container .list-cell {
+-fx-background-color: #EEEEEE;
+-fx-pref-width: 808;
+-fx-font-family: "Roboto";
+-fx-font-size: 1.3em;
+-fx-padding: 15 0 15 0;
+
+
+}
+
+
+.innerimage{
+    -fx-background-image: url("Images/newR.jpg");
+}
+
+.backgroundclassimage{
+    
+   -fx-background-image: url("Images/back5new2.jpg");
+   -fx-padding-bottom: 0px;
+    
+}

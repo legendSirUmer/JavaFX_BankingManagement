@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane id="BorderPane" fx:id="client_parent" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21">
+    <stylesheets>
+        <URL value="@/com/mycompany/mavenproject1/client.css" />
+    </stylesheets>
+    
+    <left><fx:include source="ClientMenu.fxml" /></left>
+    <center><fx:include source="Dashboard.fxml" /></center>
+    
+</BorderPane>

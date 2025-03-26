@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="850.0" stylesheets="@Dashboard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject1.DashboardController">
+   <children>
+      <Text fill="WHITE" layoutX="36.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="My Accounts" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="90.0" />
+      <Label fx:id="username_lbl" layoutX="22.0" layoutY="27.0" styleClass="user_name" text="Hi, Umer" />
+      <Text fill="WHITE" layoutX="640.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Summary">
+         <styleClass>
+            <String fx:value="section_title" />
+            <String fx:value="section_txtfill" />
+         </styleClass></Text>
+      <Label fx:id="login_date_lbl" layoutX="736.0" layoutY="27.0" styleClass="date_lbl" text="Today, 22-09-2024" />
+      <HBox layoutX="22.0" layoutY="121.0" prefHeight="180.0" prefWidth="620.0" styleClass="accounts_view" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="120.0">
+         <children>
+            <AnchorPane prefHeight="150.0" prefWidth="295.0">
+               <children>
+                  <Label fx:id="current_acc_amount_lbl" layoutX="20.0" layoutY="22.0" styleClass="account_balance" text="Rs 50000" />
+                  <Label layoutX="26.0" layoutY="120.0" styleClass="account_number" text="**** **** ****" />
+                  <Label fx:id="current_acc_no_lbl" layoutX="148.0" layoutY="120.0" styleClass="account_number" text="4658" AnchorPane.leftAnchor="148.0" />
+                  <VBox layoutX="195.0" layoutY="-10.0" prefHeight="100.0" prefWidth="35.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="14.0" />
+                  <FontAwesomeIconView glyphName="DOLLAR" layoutX="249.0" layoutY="41.0" size="30" />
+                  <Text layoutX="23.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Account" />
+               </children>
+               <styleClass>
+                  <String fx:value="account" />
+                  <String fx:value="account_gradient" />
+               </styleClass>
+            </AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="295.0">
+               <children>
+                  <Label fx:id="saving_acc_amount_lbl" layoutX="20.0" layoutY="22.0" styleClass="account_balance" text="Rs 500000" />
+                  <Label layoutX="26.0" layoutY="120.0" styleClass="account_number" text="**** **** ****" />
+                  <Label fx:id="saving_acc_no_lbl" layoutX="148.0" layoutY="120.0" styleClass="account_number" text="4658" AnchorPane.leftAnchor="148.0" />
+                  <VBox layoutX="195.0" layoutY="-10.0" prefHeight="100.0" prefWidth="35.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="14.0" />
+                  <FontAwesomeIconView glyphName="DOLLAR" layoutX="249.0" layoutY="41.0" size="30" />
+                  <Text layoutX="23.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Savings Account" />
+               </children>
+               <styleClass>
+                  <String fx:value="account" />
+                  <String fx:value="account_gradient" />
+               </styleClass>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <VBox layoutX="689.0" layoutY="120.0" prefHeight="180.0" prefWidth="210.0" styleClass="summary_view" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
+         <children>
+            <VBox prefHeight="173.0" prefWidth="190.0" styleClass="acc_summary_container">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Income" />
+                  <Label fx:id="income_lbl" styleClass="income_amount" text="+Rs 900000" />
+                  <Line endX="46.5" startX="-100.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Expenses" />
+                  <Label fx:id="expense_lbl" styleClass="expense_amount" text="+Rs 45000" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children></VBox>
+      <ListView fx:id="transaction_listview" layoutX="14.0" layoutY="372.0" prefHeight="365.0" prefWidth="570.0" styleClass="new_trans_container" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="14.0" />
+      <Text fill="WHITE" layoutX="20.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="Latest Transaction" />
+      <Text fill="WHITE" layoutX="598.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="section_title" text="Send Money" />
+      <VBox layoutX="598.0" layoutY="371.0" prefHeight="366.0" prefWidth="240.0" styleClass="new_trans_container">
+         <children>
+            <Label text="Payee Address" />
+            <TextField fx:id="payee_tf" />
+            <Label text="Amount in Rs" />
+            <TextField fx:id="amount_tf" />
+            <Label text="Message (Optional)" />
+            <TextArea fx:id="message_ta" prefHeight="70.0" prefWidth="200.0" />
+            <Button fx:id="send_btn" mnemonicParsing="false" onAction="#SendingMoney" text="Send " />
+         </children></VBox>
+   </children>
+   <styleClass>
+      <String fx:value="dashboard" />
+      <String fx:value="backgroundclassimage" />
+   </styleClass>
+</AnchorPane>

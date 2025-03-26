@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="180.0" styleClass="main_menu_container" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject1.AdminMenuController">
+   <children>
+      <AnchorPane prefHeight="750.0" prefWidth="180.0" styleClass="left_container" stylesheets="@clientmenu.css">
+         <children>
+            <VBox prefHeight="80.0" prefWidth="160.0" styleClass="title_container" stylesheets="@clientmenu.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <FontAwesomeIconView glyphName="BANK" size="40" styleClass="admin_glyph">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </FontAwesomeIconView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="APPLE BANK">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold" size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Text>
+               </children>
+            </VBox>
+            <VBox prefHeight="400.0" prefWidth="160.0" styleClass="menu_container" stylesheets="@clientmenu.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <Button fx:id="create_client_btn" mnemonicParsing="false" onAction="#setCreateClient" prefWidth="122.0" text="Create Client">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="PLUS" size="20" />
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="main_btn" />
+                        <String fx:value="admin_btn" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="client_list_btn" mnemonicParsing="false" onAction="#setClientsList" text="Clients">
+                     <styleClass>
+                        <String fx:value="main_btn" />
+                        <String fx:value="admin_btn" />
+                     </styleClass>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="LIST" size="20" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="deposit_btn" mnemonicParsing="false" text="Deposit">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="MONEY" size="20" />
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="main_btn" />
+                        <String fx:value="admin_btn" />
+                     </styleClass>
+                  </Button>
+                  <Line endX="120.0" />
+                  <Button fx:id="logout_btn" mnemonicParsing="false" text="Logout">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="EXTERNAL_LINK" size="20" />
+                     </graphic>
+                     <styleClass>
+                        <String fx:value="alt_menu_btn" />
+                        <String fx:value="admin_alt_btn" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="120.0" prefWidth="130.0" styleClass="report_container" stylesheets="@clientmenu.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+               <children>
+                  <Button fx:id="report_btn" mnemonicParsing="false" text="REPORT">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="PLUS" />
+                     </graphic>
+                  </Button>
+                  <Label text="All rights reserved" />
+                  <Label text="\@AppleBank">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="APPLE" />
+                     </graphic>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@clientmenu.css" />
+      <URL value="@clientmenu.css" />
+   </stylesheets>
+</VBox>
