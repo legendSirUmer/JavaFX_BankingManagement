@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="50.0" prefWidth="750.0" styleClass="client_cell_container" stylesheets="@clientcell.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.mycompany.mavenproject1.ClientCellController">
+   <children>
+      <FontAwesomeIconView glyphName="USER" layoutX="26.0" layoutY="29.0" size="20" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <HBox layoutX="119.0" layoutY="-25.0" prefHeight="40.0" prefWidth="550.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="5.0">
+         <children>
+            <Label fx:id="client_name_lbl" text="Umer" />
+            <Label fx:id="sv_acc_no_lbl" styleClass="acc_display_lbl" text="454854" />
+            <Label fx:id="ch_acc_no_lbl" styleClass="acc_display_lbl" text="522542" />
+            <Label fx:id="payee_address_lbl" text="\@123ghj" />
+            <Label fx:id="client_balance_lbl" text="Rs. 5000000" />
+            <Label fx:id="date_created_lbl" text="22-4-2024" />
+         </children>
+      </HBox>
+      <Button fx:id="delete_btn" layoutX="675.0" layoutY="13.0" mnemonicParsing="false" styleClass="delete_btn" text="Delete" AnchorPane.rightAnchor="14.0">
+         <graphic>
+            <FontAwesomeIconView glyphName="TRASH" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

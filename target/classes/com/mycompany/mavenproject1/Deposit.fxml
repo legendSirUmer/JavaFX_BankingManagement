@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="850.0" stylesheets="@deposit.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject1.DepositController">
+   <children>
+      <VBox layoutX="15.0" layoutY="145.0" prefHeight="570.0" prefWidth="820.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="60.0" prefWidth="820.0" styleClass="search_box">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search By Payee Address" textAlignment="CENTER" />
+                  <TextField fx:id="payee_address_txt" />
+                  <Button fx:id="search_btn" mnemonicParsing="false" text="Search">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="20" />
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <ListView fx:id="result_listview" prefHeight="200.0" prefWidth="820.0" styleClass="deposit_container" />
+            <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="315.0" prefWidth="100.0" styleClass="search_box">
+               <children>
+                  <Text stroke="BLACK" strokeType="OUTSIDE" styleClass="whitetext" text="Deposit Section">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin></Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="whitetext" text="Amount" />
+                  <TextField fx:id="amount_txt" />
+                  <Button fx:id="deposit_btn" mnemonicParsing="false" text="Deposit">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="MONEY" size="20" />
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+   <styleClass>
+      <String fx:value="mainFxmlClass" />
+      <String fx:value="admin_back" />
+   </styleClass>
+</AnchorPane>
